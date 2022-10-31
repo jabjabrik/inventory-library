@@ -5,17 +5,15 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "publish": "git add . & git -am 'init' & git push origin main",
+    "start": "nodemon -w app.js app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.2",
+    "ejs": "^3.1.8",
     "express": "^4.18.2"
-  },
-  "engines": {
-    "npm": ">= 8.0.0",
-    "node": ">= 18.0.0"
   }
 }
